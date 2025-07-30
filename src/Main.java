@@ -15,10 +15,15 @@ public class Main{
         System.out.print("Enter account holder: ");
         String holder = sc.nextLine();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.print("Is there an initial deposit: (Y / N)");
+        char response = sc.next().charAt(0);
+        if(response == 'Y'){
+            System.out.print("Insert the initial value: ");
+            double initialDeposit = sc.nextDouble();
+            conta1 = new Account(num, holder, initialDeposit);
+        }
+        else {
+            conta1 = new Account(num, holder);
         }
     }
 }
