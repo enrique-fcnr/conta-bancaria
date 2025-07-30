@@ -25,5 +25,26 @@ public class Main{
         else {
             conta1 = new Account(num, holder);
         }
+
+        System.out.println();
+        System.out.println("Account Data: ");
+        System.out.println(conta1);
+
+        System.out.println();
+        System.out.print("Enter a deposit value: ");
+        double depositValue = sc.nextDouble();
+        conta1.deposit(depositValue);
+        System.out.println("Updated account data: ");
+        System.out.println(conta1);
+
+        System.out.println();
+        System.out.print("Enter a withdraw value: ");
+        double withdrawValue = sc.nextDouble();
+        conta1.withdraw(withdrawValue);
+
+        System.out.println("Updated account data: ");
+        System.out.println(conta1);
+
+        sc.close();
     }
 }
