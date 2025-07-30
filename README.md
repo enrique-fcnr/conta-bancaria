@@ -30,3 +30,22 @@ Praticar os conceitos fundamentais da programação em Java, como:
 
 ## 📁 Estrutura do Projeto
 
+/src
+├── Main.java // Lógica principal e interação com o usuário
+└── entities/
+└── Account.java // Classe representando a conta bancária
+
+## 🚀 Como executar
+
+1. Certifique-se de que o Java está instalado na sua máquina.
+2. Compile os arquivos:
+
+```bash
+javac Main.java entities/Account.java
+
+3. Execute o programa:
+
+bash
+Copiar
+Editar
+java Main
